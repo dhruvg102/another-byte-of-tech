@@ -4,6 +4,7 @@ import { Roboto_Flex } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { parsePostData } from "@/utils/mdParser";
 
 const roboto = Roboto_Flex({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -16,6 +17,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
+  parsePostData('posts');
   return (
     <html lang="en">
       <body className={`${roboto.className} relative left-1/2 -translate-x-1/2 px-6 bg-slate-50 max-w-[75rem] text-gray-950 `}>

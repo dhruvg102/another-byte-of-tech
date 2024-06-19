@@ -1,25 +1,34 @@
 /* eslint-disable react/no-unescaped-entities */
 import BLOGLATEST from "@/public/bloglatest.jpg";
 import Image from "next/image";
-export default function BlogPage() {
+// import { blog1 } from "@/lib/data";
+import type { blog } from "@/lib/data";
+
+export default function BlogPage({blog}: {blog:blog}) {
   return (
     <section className="flex justify-center items-start">
-      <div className=" bg-red-100">
-        <span className="justify-balance">
-          #AFRICAN ART #MINNEAPOLIS INSITUTE OF ART #PHOTOGRAPHY#PRIDE MONTH #QUEER
-          ARTISTS#ZANELE MUHOLI
-        </span>
-        <p>SHARE THIS STORY</p>
+
+      <div className="w-[25%]">
+        <div >
+          <ul className="flex w-full flex-wrap text-xs gap-x-2 p-0 m-0">
+            {blog.tags.map((tag: string) => (
+              <li key={tag} className="font-thin text-justify underline underline-offset-3">
+                #{tag}
+              </li>
+            ))}
+          </ul>
+        </div>
+        
       </div>
-      <div>
-        <div className="flex w-full items-center gap-x-10">
-          <Image src={BLOGLATEST} alt="Latest Blog" width={600} />
+      <div className="w-[75%]">
+        <div className="flex  items-center gap-x-7">
+          <Image src={blog.image} alt="Latest Blog" width={550} />
           <div className="flex flex-col gap-y-6">
             <h1 className="font-black text-5xl tracking-tight text-wrap">
-              The Shape of Time: Korean Art after 1989
+              {blog.title}
             </h1>
             <span className="text-[1.7rem] font-bold ">
-              March 23, 2024 - June 23, 2024
+              {blog.byline}
             </span>
           </div>
         </div>
@@ -29,7 +38,7 @@ export default function BlogPage() {
             taken in 2011 in Cape Town, South Africa, are now on view in Mia's
             lobby.
           </p>
-          <p className="my- text-xl font-light">
+          <p className="my-4 text-xl font-light">
             The artist, whose use of they/them pronouns is intentionally
             pluralistic to acknowledge their ancestors, began this series of
             portraits in 2006, centered on the lives of Black trans and queer

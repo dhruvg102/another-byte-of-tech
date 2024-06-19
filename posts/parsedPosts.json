@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "this-is-a-post-from-md-file",
+    "frontMatter": {
+      "title": "THIS IS A POST FROM MD FILE",
+      "date": "June 18, 2024",
+      "excerpt": "This is the excerpt of my first post from an md file.",
+      "tags": [
+        "OMV",
+        "OpenMediaVault",
+        "Docker",
+        "NAS",
+        "Mini-PC",
+        "Server",
+        "Homelab",
+        "Docker Container"
+      ]
+    },
+    "htmlContent": "<h1>My First Post</h1>\n<p>Here is an Image</p>\n<p><img src=\"/hp-mini-G4.jpg\" alt=\"Alt text for image\"></p>\n<p>Two photographs by self-described visual activist Zanele Muholi,\r\ntaken in 2011 in Cape Town, South Africa, are now on view in Mia's\r\nlobby.</p>\n<p>The artist, whose use of they/them pronouns is intentionally\r\npluralistic to acknowledge their ancestors, began this series of\r\nportraits in 2006, centered on the lives of Black trans and queer\r\npeople in Africa. And they're still at it, the project becoming a\r\nkind of quest “to rewrite a Black queer and trans visual history of\r\nSouth Africa,” Muholi says, “for the world to know of our resistance\r\nand existence.” This determination is memorably reflected in the\r\ndirectness of each sitter's gaze, the poise and self-confidence with\r\nwhich they have composed themselves for the camera.</p>\n<p>You can read more about Muholi's work in this recent interview and\r\nhear them describe it in this video from a 2020 mid-career survey at\r\nthe Tate in London.</p>\n"
+  },
+  {
+    "slug": "this-is-another-post-from-md-file",
+    "frontMatter": {
+      "title": "THIS IS ANOTHER POST FROM MD FILE",
+      "date": "June 19, 2024",
+      "excerpt": "This is the excerpt of my second post from an md file.",
+      "tags": [
+        ""
+      ]
+    },
+    "htmlContent": "<h1>My Second Post</h1>\n<p>Two photographs by self-described visual activist Zanele Muholi,\r\ntaken in 2011 in Cape Town, South Africa, are now on view in Mia's\r\nlobby.</p>\n<p>The artist, whose use of they/them pronouns is intentionally\r\npluralistic to acknowledge their ancestors, began this series of\r\nportraits in 2006, centered on the lives of Black trans and queer\r\npeople in Africa. And they're still at it, the project becoming a\r\nkind of quest “to rewrite a Black queer and trans visual history of\r\nSouth Africa,” Muholi says, “for the world to know of our resistance\r\nand existence.” This determination is memorably reflected in the\r\ndirectness of each sitter's gaze, the poise and self-confidence with\r\nwhich they have composed themselves for the camera.</p>\n<p>You can read more about Muholi's work in this recent interview and\r\nhear them describe it in this video from a 2020 mid-career survey at\r\nthe Tate in London.</p>\n"
+  },
+  {
+    "slug": "third-post-title",
+    "frontMatter": {
+      "title": "Third Post Title",
+      "date": "June 20, 2024",
+      "excerpt": "This is the excerpt of my third post from a markdown file.",
+      "tags": [
+        "TagX",
+        "TagY",
+        "TagZ"
+      ]
+    },
+    "htmlContent": "<h1>Third Post</h1>\n<p>This is the content of the third post. Here you can write your Markdown content.</p>\n"
+  }
+]

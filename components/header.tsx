@@ -11,7 +11,7 @@ export default function Header() {
           </h1>
         </Link>
         {/* CHANGE GAP IF NUMBER OF LINKS CHANGE */}
-        <ul className="flex gap-[3.5rem] flex-nowrap">
+        <ul className="flex gap-[2rem] flex-nowrap">
           {/*Nav Items */}
           {static_links.map((link) => (
             <li key={link.hash} className="">
@@ -26,7 +26,7 @@ export default function Header() {
           {collapsable_links.map((link) => (
             <li key={link.hash} className="">
               <Link
-                className={`font-extralight hover:underline transition-all`}
+                className={`font-extralight hover:underline transition-all text-nowrap`}
                 href={link.hash}
               >
                 {link.name}

@@ -1,11 +1,11 @@
 
-import Latest from "@/components/latest";
+import MainLatest from "@/components/main-latest";
 import Recents from "@/components/recents";
 export default function Home() {
   return (
     <>
       {/* Image Of Latest Blog +  Latest Blog Snippet*/}
-      <Latest/>
+      <MainLatest/>
 
       {/* Sign Up */}
       <section className="bg-gray-200 my-5 py-4 px-2 flex items-end gap-1 rounded-sm">
